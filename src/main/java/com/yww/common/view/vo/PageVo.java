@@ -1,6 +1,9 @@
 package com.yww.common.view.vo;
 
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.yww.common.view.request.PageRequest;
+
 import java.util.List;
 
 /**
@@ -9,6 +12,7 @@ import java.util.List;
  * </p>
  *
  * @author  yww
+ * @since 2023/3/4
  */
 @SuppressWarnings("all")
 @JsonPropertyOrder({"start", "size", "total", "pageCount", "rows"})

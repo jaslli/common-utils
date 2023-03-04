@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/AnonymousAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/AnonymousAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/constant/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/constant/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/request/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/request/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/vo/PageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/vo/PageVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,15 +31,28 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\environment\apache-maven-3.9.0\repository" />
+        <option name="mavenHome" value="D:/environment/apache-maven-3.9.0" />
+        <option name="userSettingsFile" value="D:\environment\apache-maven-3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MUjNrZm3b2o9rc3XJiblw8UN8a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,25 +65,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/chen/common-utils/src/main/java/com/yww/common",
+    "last_opened_file_path": "C:/Users/11419/Desktop/project/common-utils/src/main/java/com/yww/common/config/redis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11419\Desktop\project\common-utils\src\main\java\com\yww\common\config\redis" />
       <recent name="D:\chen\common-utils\src\main\java\com\yww\common" />
       <recent name="D:\chen\common-utils\src\main\java\com\yww\common\view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yww.common.utils" />
+      <recent name="com.yww.common.exception" />
+      <recent name="com.yww.common.config" />
+      <recent name="com.yww.common.config.mybatis" />
       <recent name="com.yww.common.constant" />
-      <recent name="com.yww.common.view" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -76,6 +102,13 @@
       <workItem from="1677829023025" duration="1193000" />
       <workItem from="1677830253403" duration="397000" />
       <workItem from="1677830683047" duration="1051000" />
+      <workItem from="1677924807703" duration="131000" />
+      <workItem from="1677924956779" duration="193000" />
+      <workItem from="1677925159701" duration="35000" />
+      <workItem from="1677925208773" duration="203000" />
+      <workItem from="1677925423429" duration="66000" />
+      <workItem from="1677925659587" duration="705000" />
+      <workItem from="1677926694266" duration="1860000" />
     </task>
     <servers />
   </component>

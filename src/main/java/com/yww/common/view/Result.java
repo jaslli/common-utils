@@ -1,12 +1,16 @@
 package com.yww.common.view;
 
 
+import com.yww.common.constant.ResultCode;
+import lombok.Data;
+
 /**
  * <p>
  *      结果封装类
  * </p>
  *
  * @author  yww
+ * @since 2023/3/4
  */
 @Data
 @SuppressWarnings("all")

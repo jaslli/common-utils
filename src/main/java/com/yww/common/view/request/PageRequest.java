@@ -1,6 +1,9 @@
 package com.yww.common.view.request;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * <p>
@@ -8,6 +11,7 @@ package com.yww.common.view.request;
  * </p>
  *
  * @author  yww
+ * @since 2023/3/4
  */
 @SuppressWarnings("all")
 @JsonIgnoreProperties(ignoreUnknown = true)
