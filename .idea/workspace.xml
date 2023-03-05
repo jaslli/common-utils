@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/AnonymousAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/AnonymousAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/annotation/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/constant/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/constant/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/exception/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/AssertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/AssertUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/request/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/request/PageRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/vo/PageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/vo/PageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/ValidateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/ValidateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +61,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/11419/Desktop/project/common-utils/src/main/java/com/yww/common/config/redis",
     "node.js.detected.package.eslint": "true",
@@ -74,6 +72,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "e371f9a8be0f05ed6e63a9bc9e7a7fbe",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,10 +84,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yww.common.utils" />
+      <recent name="com.yww.common.constant" />
       <recent name="com.yww.common.exception" />
       <recent name="com.yww.common.config" />
       <recent name="com.yww.common.config.mybatis" />
-      <recent name="com.yww.common.constant" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -108,11 +107,25 @@
       <workItem from="1677925208773" duration="203000" />
       <workItem from="1677925423429" duration="66000" />
       <workItem from="1677925659587" duration="705000" />
-      <workItem from="1677926694266" duration="1860000" />
+      <workItem from="1677926694266" duration="2902000" />
+      <workItem from="1677941811367" duration="74000" />
+      <workItem from="1678017808470" duration="311000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1677928793213</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677928793213</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

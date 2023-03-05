@@ -1,7 +1,7 @@
 package com.yww.common.utils;
 
 import cn.hutool.core.util.IdUtil;
-import com.yww.common.exception.GlobalException;
+import com.yww.common.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -43,7 +43,7 @@ public class FileUtil {
         } catch (IOException e) {
             log.warn("保存文件出错，保存的文件名称为：" + originalFilename);
             log.warn("保存文件出错，保存的路径为：" + path);
-            throw new GlobalException(e.getMessage());
+            throw new BusinessException(e.getMessage());
         }
     }
 

@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yww.common.exception.GlobalException;
+import com.yww.common.exception.BusinessException;
 import com.yww.common.view.request.PageRequest;
 import com.yww.common.view.vo.PageVo;
 
@@ -43,7 +43,7 @@ public class PageUtil {
         try {
             entity = clazz.newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
-            throw new GlobalException("分页类型转换错误");
+            throw new BusinessException("分页类型转换错误");
         }
         BeanUtil.copyProperties(pageVo, entity);
         IPage<R> page = new Page<>(pageVo.getPage(), pageVo.getSize());
@@ -65,7 +65,7 @@ public class PageUtil {
         try {
             entity = clazz.newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
-            throw new GlobalException("分页类型转换错误");
+            throw new BusinessException("分页类型转换错误");
         }
 
         // 已设置在lambdaQuery的字段实体类中不应该重复设置

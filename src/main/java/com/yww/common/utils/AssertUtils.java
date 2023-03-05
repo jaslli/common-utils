@@ -1,7 +1,7 @@
 package com.yww.common.utils;
 
 import cn.hutool.core.util.StrUtil;
-import com.yww.common.exception.GlobalException;
+import com.yww.common.exception.BusinessException;
 
 /**
  * <p>
@@ -24,11 +24,11 @@ public class AssertUtils {
      *
      * @param object  要判断的对象
      * @param message 断言失败时的错误信息
-     * @throws GlobalException 全局异常类
+     * @throws BusinessException 全局异常类
      */
-    public static void notNull(Object object, String message) throws GlobalException {
+    public static void notNull(Object object, String message) throws BusinessException {
         if (object == null) {
-            throw new GlobalException(message);
+            throw new BusinessException(message);
         }
     }
 
@@ -37,11 +37,11 @@ public class AssertUtils {
      *
      * @param text    要进行检查的字符串
      * @param message 断言失败时的错误信息
-     * @throws GlobalException 全局异常类
+     * @throws BusinessException 全局异常类
      */
-    public static void hasText(String text, String message) throws GlobalException {
+    public static void hasText(String text, String message) throws BusinessException {
         if (StrUtil.isBlank(text)) {
-            throw new GlobalException(message);
+            throw new BusinessException(message);
         }
     }
 
@@ -51,11 +51,11 @@ public class AssertUtils {
      * @param expression 布尔表达式
      * @param errCode    断言失败时的错误代码
      * @param message    断言失败时的错误信息
-     * @throws GlobalException 自定义全局异常
+     * @throws BusinessException 自定义全局异常
      */
-    public static void isTrue(boolean expression, int errCode, String message) throws GlobalException {
+    public static void isTrue(boolean expression, int errCode, String message) throws BusinessException {
         if (!expression) {
-            throw new GlobalException(errCode, message);
+            throw new BusinessException(errCode, message);
         }
     }
 
@@ -64,9 +64,9 @@ public class AssertUtils {
      *
      * @param expression 布尔表达式
      * @param message    断言失败时的错误信息
-     * @throws GlobalException 自定义全局异常
+     * @throws BusinessException 自定义全局异常
      */
-    public static void isTrue(boolean expression, String message) throws GlobalException {
+    public static void isTrue(boolean expression, String message) throws BusinessException {
         isTrue(expression, 500, message);
     }
 
