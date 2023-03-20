@@ -22,16 +22,16 @@ public class MybatisPlusConfig {
 
     /**
      * 插件配置
-     * 1. 分页插件
-     * 2. 防全表更新与删除插件
+     * 1. 防全表更新与删除插件
+     * 2. 分页插件
      */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
-        // 分页插件，指定数据库为MYSQL
-        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         // 防全表更新与删除插件
         interceptor.addInnerInterceptor(new BlockAttackInnerInterceptor());
+        // 分页插件，指定数据库为MYSQL
+        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         return interceptor;
     }
 

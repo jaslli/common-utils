@@ -41,8 +41,8 @@ public class FileUtil {
         try {
             file.transferTo(dest);
         } catch (IOException e) {
-            log.warn("保存文件出错，保存的文件名称为：" + originalFilename);
-            log.warn("保存文件出错，保存的路径为：" + path);
+            log.error("保存文件出错，保存的文件名称为：{}", originalFilename);
+            log.error("保存文件出错，保存的路径为：{}", path);
             throw new BusinessException(e.getMessage());
         }
     }
