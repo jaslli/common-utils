@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="init">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/config/TEST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/config/mybatis/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/config/mybatis/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/IpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/IpUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -29,7 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://D:/environment/apache-maven-3.9.0/repository/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/core/io/FileUtil.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/core/io/FileUtil.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,11 +42,6 @@
         <option name="mavenHome" value="D:/environment/apache-maven-3.9.0" />
         <option name="userSettingsFile" value="D:\environment\apache-maven-3.9.0\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -63,7 +59,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/11419/Desktop/project/common-utils/src/main/java/com/yww/common/config/redis",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/11419/Desktop/project/common-utils/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +75,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11419\Desktop\project\common-utils\src\main\resources" />
       <recent name="C:\Users\11419\Desktop\project\common-utils\src\main\java\com\yww\common\config\redis" />
       <recent name="D:\chen\common-utils\src\main\java\com\yww\common" />
       <recent name="D:\chen\common-utils\src\main\java\com\yww\common\view" />
@@ -110,7 +108,9 @@
       <workItem from="1677926694266" duration="2902000" />
       <workItem from="1677941811367" duration="74000" />
       <workItem from="1678017808470" duration="605000" />
-      <workItem from="1679310154543" duration="2391000" />
+      <workItem from="1679310154543" duration="2472000" />
+      <workItem from="1680953785731" duration="1469000" />
+      <workItem from="1680961039276" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1677928793213</created>
@@ -126,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678018302823</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1679317153460</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679317153460</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

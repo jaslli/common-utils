@@ -3,8 +3,11 @@ package com.yww.common.utils;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.useragent.UserAgent;
 import cn.hutool.http.useragent.UserAgentUtil;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Objects;
 
 /**
  * <p>
@@ -15,6 +18,15 @@ import javax.servlet.http.HttpServletRequest;
  * @since 2023/3/4
  */
 public class IpUtil {
+
+    /**
+     * 获取客户端IP
+     *
+     * @return IP
+     */
+    public static String getIpAddr() {
+        return getIpAddr(getRequest());
+    }
 
     /**
      * 获取客户端IP
@@ -90,6 +102,15 @@ public class IpUtil {
      */
     public static UserAgent getBrowser(HttpServletRequest request) {
         return UserAgentUtil.parse(request.getHeader("User-Agent"));
+    }
+
+    /**
+     * 获取当前请求
+     *
+     * @return  当前请求
+     */
+    public static HttpServletRequest getRequest() {
+        return ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
     }
 
 }
