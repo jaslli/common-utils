@@ -1,6 +1,8 @@
 package com.yww.common.view;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.yww.common.constant.ResultCode;
 import lombok.Data;
 
@@ -14,17 +16,25 @@ import lombok.Data;
  */
 @Data
 @SuppressWarnings("all")
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Result<T> {
+
+    /**
+     * 成功标记
+     */
+    private boolean success;
 
     /**
      * 状态码
      */
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private Integer code;
 
     /**
      * 返回内容
      */
-    private String message;
+    private String errMsg;
 
     /**
      * 返回数据
@@ -34,21 +44,7 @@ public class Result<T> {
     /**
      * 私有化无参构造函数
      */
-    private Result() {
-    }
-
-    /**
-     * 全参构造函数
-     *
-     * @param code    状态码
-     * @param message 返回内容
-     * @param data    返回数据
-     */
-    public Result(Integer code, String message, T data) {
-        this.code = code;
-        this.message = message;
-        this.data = data;
-    }
+    private Result() {}
 
     /**
      * 返回一个响应成功的信息，不带数据
@@ -56,7 +52,10 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> success() {
-        return new Result<>(ResultCode.SUCCESS.getStatus(), ResultCode.SUCCESS.getMessage(), null);
+        Result<T> result = new Result<>();
+        result.setCode(ResultCode.SUCCESS.getStatus());
+        result.setSuccess(true);
+        return result;
     }
 
     /**
@@ -66,7 +65,11 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> success(T data) {
-        return new Result<>(ResultCode.SUCCESS.getStatus(), ResultCode.SUCCESS.getMessage(), data);
+        Result<T> result = new Result<>();
+        result.setCode(ResultCode.SUCCESS.getStatus());
+        result.setSuccess(true);
+        result.setData(data);
+        return result;
     }
 
     /**
@@ -75,7 +78,11 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> failure() {
-        return new Result<>(ResultCode.FAILED.getStatus(), ResultCode.FAILED.getMessage(), null);
+        Result<T> result = new Result<>();
+        result.setCode(ResultCode.FAILED.getStatus());
+        result.setErrMsg(ResultCode.FAILED.getMessage());
+        result.setSuccess(false);
+        return result;
     }
 
     /**
@@ -85,7 +92,11 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> failure(String message) {
-        return new Result<>(ResultCode.FAILED.getStatus(), message, null);
+        Result<T> result = new Result<>();
+        result.setCode(ResultCode.FAILED.getStatus());
+        result.setErrMsg(message);
+        result.setSuccess(false);
+        return result;
     }
 
     /**
@@ -95,7 +106,11 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> failure(ResultCode resultCode) {
-        return new Result<>(resultCode.getStatus(), resultCode.getMessage(), null);
+        Result<T> result = new Result<>();
+        result.setCode(ResultCode.FAILED.getStatus());
+        result.setErrMsg(resultCode.getMessage());
+        result.setSuccess(false);
+        return result;
     }
 
     /**
@@ -106,19 +121,11 @@ public class Result<T> {
      * @return Result
      */
     public static <T> Result<T> failure(Integer code, String message) {
-        return new Result<>(code, message, null);
-    }
-
-    /**
-     * 返回一个自定义状态码和错误信息的错误提示
-     *
-     * @param code    状态码
-     * @param message 消息
-     * @param date    错误信息
-     * @return Result
-     */
-    public static <T> Result<T> failure(Integer code, String message, T date) {
-        return new Result<>(code, message, date);
+        Result<T> result = new Result<>();
+        result.setCode(code);
+        result.setErrMsg(message);
+        result.setSuccess(false);
+        return result;
     }
 
 }

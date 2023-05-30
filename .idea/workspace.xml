@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="添加BigDecimal工具类">
+    <list default="true" id="6bc8fe05-810c-4d0a-aa78-c87223cff357" name="变更" comment="添加防止幂等性注解">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/IpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/utils/IpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yww/common/view/Result.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;e371f9a8be0f05ed6e63a9bc9e7a7fbe&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -79,11 +81,11 @@
       <recent name="D:\chen\common-utils\src\main\java\com\yww\common\view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yww.common.view.vo" />
       <recent name="com.yww.common.utils" />
       <recent name="com.yww.common.constant" />
       <recent name="com.yww.common.exception" />
       <recent name="com.yww.common.config" />
-      <recent name="com.yww.common.config.mybatis" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +111,10 @@
       <workItem from="1679310154543" duration="2472000" />
       <workItem from="1680953785731" duration="1469000" />
       <workItem from="1680961039276" duration="3756000" />
-      <workItem from="1681035830285" duration="1497000" />
+      <workItem from="1681035830285" duration="1852000" />
+      <workItem from="1684590347878" duration="217000" />
+      <workItem from="1684590577627" duration="92000" />
+      <workItem from="1685461361747" duration="921000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1677928793213</created>
@@ -146,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681036158483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加防止幂等性注解">
+      <created>1681037507903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681037507903</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +168,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="添加限流注解" />
     <MESSAGE value="添加BigDecimal工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加BigDecimal工具类" />
+    <MESSAGE value="添加防止幂等性注解" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加防止幂等性注解" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
